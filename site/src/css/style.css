@@ -1,0 +1,89 @@
+/*CONFIGURAÇÃO GERAL - ESSA PARTE É PADRÃO EM TODO O SITE*/
+:root{
+     /* VARIAVEIS EM CSS */
+    --corPreto:#232323; /*TOM DE PRETO QUE USAREMOS*/
+    --corRoxo:#976DD0; /*TOM DE ROXO QUE USAREMOS*/
+    --corBranco:#ffffff; /*branco QUE USAREMOS*/
+    --corFundo:#F5F5F5; /*TOM DE CINZA/BRANCA  QUE USAREMOS COMO FUNDO*/
+    /*
+        PARA UTILIZAR AS VARIAVEIS COLOQUE A PROPRIEDADE E
+         COMO VALOR  USE O NOME DA VARIAVEL
+         EX:
+                h1{
+                    color:  var(--corPreto);
+                }
+    */
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1.5;
+    font-size: 18px;
+}
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+.highlight{
+    color:var(--corRoxo);
+}
+.current{
+    color: var(--corRoxo);
+    border-bottom: var(--corRoxo) 1px solid;
+}
+main {
+    height: 100%;
+    padding: 2% 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*CONFIGURAÇÃO GERAL - ESSA PARTE É PADRÃO EM TODO O SITE*/
+
+/*CONFIGURAÇÃO HEADER E FOOTER- ESSA PARTE É PADRÃO EM TODO O SITE*/
+header,footer{
+    background: var(--corPreto);
+    color: var(--corBranco);
+    padding: 10px 0px;
+    box-shadow: 2px 2px 10px #00000090;
+}
+footer {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    text-align: center;  box-shadow: 2px -2px 10px #00000090;
+}
+nav, nav ul, h1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color:var(--corRoxo);
+}
+nav a {
+    color: var(--corRoxo);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover {
+    color:  var(--corRoxo);
+    transition: all 0.3s ease-in-out;
+    padding: 0px 10px;
+    border-top: var(--corRoxo) 1px solid;
+    border-left: var(--corRoxo) 1px solid;
+    box-shadow: 1px 1px var(--corRoxo), 2px 2px var(--corRoxo), 3px 3px var(--corRoxo);
+    transform: translateX(-3px);
+} 
+nav ul li {
+    padding: 0px 20px 0px 20px;
+}
+header .icon-header{
+    width: 20px;
+    margin-right: 5px;
+}
+/*CONFIGURAÇÃO HEADER E FOOTER- ESSA PARTE É PADRÃO EM TODO O SITE*/
+/*CONFIGURAÇÃO  - ESSA PARTE É PADRÃO EM TODO O SITE*/
+/*CONFIGURAÇÃO  - ESSA PARTE É PADRÃO EM TODO O SITE*/
